@@ -1,0 +1,10 @@
+{
+    if ($0 ~ /^[^ ]+ +t/){
+	printf("%s\n",$0);
+	v1 = sub(/ /,"t ",$0);
+	v2 = sub(/ t /," d ",v1);
+	printf("%s\n",v2);
+	printf("%s\n",v1);
+    }
+
+}

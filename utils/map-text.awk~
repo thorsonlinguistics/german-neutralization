@@ -1,0 +1,8 @@
+{
+    CHANGED = 0;
+    split($0,w,' ');
+    uid = w[1];
+    for (k=2,k <= length(w), k++){
+	printf("",uid,k);
+    }
+}

@@ -1,0 +1,28 @@
+{
+    # Field separator for map.
+    while ((getline line < MAP) > 0){
+	split(line,a,"\t");
+	m[a[1]] = a[2];
+    }
+}
+
+{
+    CHANGE = 0;
+    split($0,w," ");
+    uid = w[1];
+    for (k=2; k <= length(w); k++){
+	if (m[w[k]]){
+	    w[k] = m[w[k]];
+	    CHANGE = 1;
+	}
+	#printf(".");
+	if (CHANGE == 1){
+	    printf("%s",uid);
+	    for (k=2; k <= length(w); k++){
+		printf(" %s",w[k]);
+	    }
+	    printf("\n");
+	} 
+    }
+}
+
