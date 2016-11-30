@@ -5,7 +5,7 @@
 # cannot be released publicly, so you will need to download it yourself.
 
 # The root Verb-Mobil directory, which contains the various data subdirectories
-VM=/projects/speech/corpus/VM1
+VM=/projects/speech/corpus/VM1/
 
 # The Verb-Mobil documentation directory, which is initially a zipped file in
 # the root.

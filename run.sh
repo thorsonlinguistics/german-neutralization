@@ -5,6 +5,9 @@ set -e
 # Import the configuration
 source ./config.sh
 
+# Import the necessary path variables
+source ./path.sh
+
 # Prepare the data from the corpus. This automatically generates the data which
 # Kaldi requires to train, including the lexicon, transcript files, etc. 
 local/vm1_data_prep.py $VM $VM_DOC
