@@ -40,15 +40,15 @@ directory.
 This will create a directory `german-neutralization` which contains the
 following sub-directories. You do not need to take any action with these.
 
-    - `german-neutralization/conf/` - configuration files for Kaldi-ASR
-    - `german-neutralization/steps/` - useful scripts from Kaldi
-    - `german-neutralization/utils/` - useful scripts from Kaldi
+- `german-neutralization/conf/` - configuration files for Kaldi-ASR
+- `german-neutralization/steps/` - useful scripts from Kaldi
+- `german-neutralization/utils/` - useful scripts from Kaldi
 
 It will also create the following files:
 
-    - `german-neutralization/config.sh` - local configuration
-    - `german-neutralization/path.sh` - path variables
-    - `german-neutralization/run.sh` - a script to run the model
+- `german-neutralization/config.sh` - local configuration
+- `german-neutralization/path.sh` - path variables
+- `german-neutralization/run.sh` - a script to run the model
 
 It is necessary to modify `config.sh` and `path.sh` with paths pointing to your
 installation of Kaldi, the VM1 corpus, and the VM1 documentation.
