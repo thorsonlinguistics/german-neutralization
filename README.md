@@ -43,6 +43,7 @@ following sub-directories. You do not need to take any action with these.
 - `german-neutralization/conf/` - configuration files for Kaldi-ASR
 - `german-neutralization/steps/` - useful scripts from Kaldi
 - `german-neutralization/utils/` - useful scripts from Kaldi
+- `german-neutralization/local/` - useful local scripts
 
 It will also create the following files:
 
