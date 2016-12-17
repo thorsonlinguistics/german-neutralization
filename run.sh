@@ -90,3 +90,15 @@ steps/decode.sh --config conf/decode.config --nj 20 --cmd "$decode_cmd" \
 # Aligns the ambiguous data for testing using the advanced triphone model.
 steps/align_si.sh --nj 8 --cmd "$train_cmd" \
   data/test_ambiguous data/lang exp/tri2b exp/tri2b_ambi_ali
+
+##### ANALYSIS
+
+# Merge the alignments together
+
+cat exp/mono_ambi_ali/*.gz > exp/mono_ambi_ali/ali.all.gz
+cat exp/tri1_ambi_ali/*.gz > exp/tri1_ambi_ali/ali.all.gz
+cat exp/tri2b_ambi_ali/*.gz > exp/tri2b_ambi_ali/ali.all.gz
+
+# Convert the data for matlab
+
+local/convert.sh

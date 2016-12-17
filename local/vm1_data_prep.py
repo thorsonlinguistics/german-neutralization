@@ -185,6 +185,8 @@ def process_extra():
     """
     Generates the following files:
         - data/local/dict/silence_phones.txt
+        - data/local/dict/optional_silence.txt
+        - data/local/dict/nonsilence_phones.txt
     """
 
     with open('data/local/dict/silence_phones.txt', 'w') as outfile:
